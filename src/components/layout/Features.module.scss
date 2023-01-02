@@ -1,0 +1,79 @@
+// Primary Colours
+$color-primary-light: #7ed56f;
+$color-primary: #55c57a;
+$color-primary-dark: #28b485;
+
+// Greys
+$color-grey-100: #f1f1f1;
+$color-grey-300: #a0a0a0;
+$color-grey-500: #777777;
+$color-grey-700: #535353;
+$color-grey-900: #535353;
+$color-black: #000000;
+
+.grid {
+  display: grid;
+  row-gap: 1.2rem;
+  column-gap: 5rem;
+  
+}
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+
+// Background Section
+
+.features-section {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 0.6)
+    ),
+    url("../../assets/img/nat-4.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -10rem;
+  margin-bottom: 10rem;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+.features-list{
+    max-width: 115rem;
+    margin: 0 auto;
+}
+
+// Card Layout
+.features-list-card {
+  text-align: center;
+  max-width: 25rem;
+  padding: 2.5rem;
+  background-color: rgba($color-grey-100, 0.8);
+  
+  transition: all 0.3s;
+
+  &:hover{
+    transform: translateY(-1.2rem) scale(1.05);
+  }
+
+  &-icon {
+    font-size: 6rem;
+    margin: 2rem 0;
+    color: $color-primary-light;
+  }
+  &-heading {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $color-grey-700;
+  }
+  &-para {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: $color-grey-500;
+  }
+}

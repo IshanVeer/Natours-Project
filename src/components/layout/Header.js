@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import classes from "./Header.module.css";
+import classes from "./Header.module.scss";
 import NavigationBar from "./NavigationBar";
 
 const Header = () => {
